@@ -56,7 +56,7 @@ input, select {
     display: contents;
 }
 input[type="submit"] {
-    font-size: 110%;
+    font-size: 14px;
     font-weight: 100;
     background: #006dcc;
     /* border-color: #016BC1;
@@ -67,4 +67,17 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
     background: #0165b6;
+}
+
+
+.user_ready{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.user_ready a {
+    text-decoration: none;
+    color: #0da20d;
+    font-weight: bold;
 }
