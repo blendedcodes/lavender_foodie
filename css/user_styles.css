@@ -68,3 +68,14 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: #0165b6;
 }
+
+.user_ready{
+    font-size: 14px;
+    text-align: center;
+}
+
+.user_ready a {
+    text-decoration: none;
+    color: #0da20d;
+    font-weight: bold;
+}

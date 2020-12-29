@@ -10,7 +10,7 @@ function validateForm() {
     var firstname = document.RegForm.firstname.value;
     var lastname = document.RegForm.lastname.value;
     var email = document.RegForm.email.value;
-    var password = document.RegForm.password.value;
+    // var password = document.RegForm.password.value;
 
     // var mobile = document.RegForm.mobile.value;
     // var country = document.RegForm.country.value;
@@ -26,7 +26,7 @@ function validateForm() {
     // }
 
     //defining error variable with a default value
-    var firstnameErr =  lastnameErr = emailErr = passwordErr = true;
+    var firstnameErr = lastnameErr = emailErr = true;
 
     //validating first name input
     if (firstname == "") {
@@ -103,11 +103,11 @@ function validateForm() {
 
     //preventing the form from been submitted if any input has an error
 
-    if ((firstnameErr || lastnameErr || emailErr || passwordErr) == true) {
+    if ((firstnameErr || lastnameErr || emailErr) == true) {
         return false;
     } else {
         //creating a string to hold the data submitted for previewing
-        var dataPreview = "You've enter the following details: \n" + "First Name: " + firstname + "\n" + "Last Name: " + lastname + "\n" + "Email Address: " + email + "\n" + "Password: " + password + "\n";
+        var dataPreview = "You've enter the following details: \n" + "First Name: " + firstname + "\n" + "Last Name: " + lastname + "\n" + "Email Address: " + email + "\n";
 
 
         //displaying the data input in a dialog box before submitting the form
@@ -115,3 +115,17 @@ function validateForm() {
     }
 
 };
+
+
+
+
+var check = function () {
+    if (document.getElementById('password').value ===
+        document.getElementById('confirm_pass').value) {
+        document.getElementById('message').style.color = 'green';
+        document.getElementById('message').innerHTML = 'Password match';
+    } else {
+        document.getElementById('message').style.color = 'red';
+        document.getElementById('message').innerHTML = 'Password does not match';
+    }
+}
