@@ -1,7 +1,7 @@
 <?php
 // /* Attempt MySQL server connection. Assuming you are running MySQL
 // server with default setting (user 'root' with no password) */
-// $mysqli = new mysqli("localhost", "root", "", "blendedcodes");
+// $mysqli = new mysqli("localhost", "root", "", "");
  
 // // Check connection
 // if($mysqli === false){
@@ -21,7 +21,7 @@ if(!isset($_SESSION)){
 }
 
 $hostname = "localhost";
-$username = "blendedcodes";
+$username = "root";
 $password = "";
 $dbname = "lavender_foodie";
 

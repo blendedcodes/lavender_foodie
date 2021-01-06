@@ -1,6 +1,6 @@
 <?php 
 //database connection
-include('./config/db.php');
+include('../config/db.php');
 
 global $wrong_password_error, $account_notexist_error, $email_pass_error, $verificationRequired_error, $email_empty_error, $pass_empty_error;
 

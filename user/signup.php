@@ -1,4 +1,4 @@
-<?php  include('./controller/registration.php'); ?>
+<?php  include('../controller/registration.php'); ?>
 
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/user_styles.css">
     <script src="../scripts/jquery-3.5.1.min.js"></script>
 
-    <script src="../scripts/validation_script.js"></script>
+    <!-- <script src="../scripts/validation_script.js"></script> -->
     <!-- Bootstrap CSS -->
 
     <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
@@ -31,10 +31,12 @@
 <body>
     <?php include('../header.php'); ?>
 
+  
+
     <form name="RegForm" id="form" onsubmit="return validateForm()" action="" method="post">
-
+        
         <!-- signup script -->
-
+       
 
         <h2>User Registration</h2>
 

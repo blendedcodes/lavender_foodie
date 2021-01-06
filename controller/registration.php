@@ -1,6 +1,6 @@
 <?php
 //including the database connection
-include('./config/db.php');
+include('../config/db.php');
 
 
 //server-side error and success messages
@@ -82,7 +82,7 @@ if (isset($_POST["submit"])) {
 
             //sending verification email to the user
             if ($sqlQuery) {
-                $msg = 'Click on the activation link to verify your email. <br><br> <a href="http://localhost:8080/php-user-authentication/user_verificaiton.php?token='.$token.'"> Click here to verify email</a>
+                $msg = 'Click on the activation link to verify your email. <br><br> <a href="http://localhost:8080/lavender_foodie/user_verificaiton.php?token='.$token.'"> Click here to verify email</a>
                     ';
 
                     //create the transport
