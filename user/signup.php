@@ -1,3 +1,6 @@
+<?php  include('./controller/registration.php'); ?>
+
+
 <!DOCTYPE html>
 <html lang="eng">
 
@@ -6,6 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/user_styles.css">
     <script src="../scripts/jquery-3.5.1.min.js"></script>
@@ -13,21 +18,29 @@
     <script src="../scripts/validation_script.js"></script>
     <!-- Bootstrap CSS -->
 
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+
+    <link rel="stylesheet" href="../css/templatemo-klassy-cafe.css">
+
+    <link rel="stylesheet" href="../css/owl-carousel.css">
+
+    <link rel="stylesheet" href="../css/lightbox.css">
 
 </head>
 
 <body>
-    <?php include('./header.php'); ?>
+    <?php include('../header.php'); ?>
 
-    <form name="RegForm" id="form" onsubmit="return validateForm()" action="confirmation.php" method="post">
+    <form name="RegForm" id="form" onsubmit="return validateForm()" action="" method="post">
+
+        <!-- signup script -->
 
 
         <h2>User Registration</h2>
 
         <?php echo $success_message; ?>
-        <?php echo $email_exist; ?>
-
-        <?php echo $emailverify_Err; ?>
+        <?php echo $email_exist; ?> 
+         <?php echo $emailverify_Err; ?>
         <?php echo $emailverify_success; ?>
 
         <div class="row">
@@ -52,7 +65,8 @@
         </div>
         <div class="row">
             <!-- <label>Confirm Password</label> -->
-            <input type="password" id="confirm_pass" name="confirm_pass" placeholder="Confirm Password" onkeyup='check();'>
+            <input type="password" id="confirm_pass" name="confirm_pass" placeholder="Confirm Password"
+                onkeyup='check();'>
             <div class="error" id='message'></div>
         </div>
         <!-- <div class="row">
@@ -91,7 +105,8 @@
         </div>
     </div> -->
         <div class="row">
-            <input type="submit" id="submit" class="btn btn-outline-primary btn-lg btn-block btn-primary" value="Get Started">
+            <input type="submit" id="submit" class="btn btn-outline-primary btn-lg btn-block btn-primary"
+                value="Get Started">
         </div>
         <div class="row user_ready">
             Already a user? <a href="login.php">Sign In</a>

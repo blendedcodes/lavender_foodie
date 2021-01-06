@@ -1,6 +1,6 @@
 <?php
 //including the database connection
-include('config/db.php');
+include('./config/db.php');
 
 
 //server-side error and success messages

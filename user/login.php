@@ -11,17 +11,23 @@
     <script src="../scripts/validation_script.js"></script>
     <!-- Bootstrap CSS -->
     <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
 
+<link rel="stylesheet" href="../css/templatemo-klassy-cafe.css">
 
+<link rel="stylesheet" href="../css/owl-carousel.css">
+
+<link rel="stylesheet" href="../css/lightbox.css">
 </head>
 
 <body>
 
     <!-- Header -->
-    <?php include('../php-user-authentication/header.php'); ?>
+    <?php include('../header.php'); ?>
 
     <!-- Login script -->
-    <?php include('./controllers/login.php'); ?>
+    <?php include('../controller/login.php'); ?>
 
     <form name="RegForm" onsubmit="return validateForm()" action="confirmation.php" method="post">
         <h2>User Login</h2>
