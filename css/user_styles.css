@@ -5,6 +5,8 @@ body {
 }
 h2 {
     text-align: center;
+    font-size: 23px !important;
+    margin-bottom: 10% !important;
     /* text-decoration: underline; */
 }
 form {

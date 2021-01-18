@@ -33,10 +33,9 @@
 
   
 
-    <form name="RegForm" id="form" onsubmit="return validateForm()" action="" method="post">
+    <form name="RegForm" id="form"  action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
         
         <!-- signup script -->
-       
 
         <h2>User Registration</h2>
 
@@ -48,12 +47,12 @@
         <div class="row">
             <!-- <label>First Name</label> -->
             <input type="text" name="firstname" placeholder="First Name">
-            <div class="error" id="firstnameErr"></div>
+            <div class="error" id="first_nameErr"></div>
         </div>
         <div class="row">
             <!-- <label>Last Name</label> -->
             <input type="text" name="lastname" placeholder="Last Name">
-            <div class="error" id="lastnameErr"></div>
+            <div class="error" id="last_nameErr"> <?php echo $firstname_emptyErr?></div>
         </div>
         <div class="row">
             <!-- <label>Email Address</label> -->
@@ -63,14 +62,14 @@
         <div class="row">
             <!-- <label>Password</label> -->
             <input type="password" id="password" name="password" placeholder="Password">
-            <!-- <div class="error" id="password"></div> -->
+            <div class="error" id="password_Err"></div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <!-- <label>Confirm Password</label> -->
-            <input type="password" id="confirm_pass" name="confirm_pass" placeholder="Confirm Password"
+            <!-- <input type="password" id="confirm_pass" name="confirm_pass" placeholder="Confirm Password"
                 onkeyup='check();'>
-            <div class="error" id='message'></div>
-        </div>
+            <div class="error" id='message'></div> -->
+        </div> 
         <!-- <div class="row">
         <label>Mobile Number</label>
         <input type="text" name="mobile" maxlength="10" placeholder="Mobile Number">
@@ -107,11 +106,11 @@
         </div>
     </div> -->
         <div class="row">
-            <input type="submit" id="submit" class="btn btn-outline-primary btn-lg btn-block btn-primary"
+            <input type="submit" name="submit" id="submit" class="btn btn-outline-primary btn-lg btn-block btn-primary"
                 value="Get Started">
         </div>
         <div class="row user_ready">
-            Already a user? <a href="login.php">Sign In</a>
+            Already a user?<a href="login.php"> Sign In</a>
         </div>
 
 

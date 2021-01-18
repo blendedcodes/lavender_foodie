@@ -55,7 +55,7 @@
         </div>
 
         <div class="row user_ready">
-            Not yet a user? <a href="signup.php">Get Started</a>
+            Not yet a user? <a href="signup.php"> Get Started</a>
         </div>
 
         <!-- jQuery -->
